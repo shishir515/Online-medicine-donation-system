@@ -1,0 +1,21 @@
+/* ==========Header section=========== */
+.header{
+  height: 70px;
+  background-color: #4b4276;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.header h2 {
+  text-transform: uppercase;
+  margin-top: 10px;
+  outline: none;
+}
+.login-btn{
+  position: relative;
+  left: 85%;
+  top: -55%;
+}
+
+.btn-sign{
+  margin-right: 10px;
+}

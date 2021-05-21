@@ -1,0 +1,31 @@
+<h3><i class="fas fa-user-tag"></i>View Request</h3>
+<div class="row">
+  <div class="col-12  viewmedicine">
+    <div class="card">
+      <table class="table table-hover">
+        <thead>
+          <th>Medicine Name</th>
+          <th>Donation Type</th>
+          <th>Dose</th>
+          <th>Quantity</th>
+          <th>Manufactre Date</th>
+          <th>Expiration Date</th>
+          <th>Action</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let medicine of list | paginate: { itemsPerPage: 5, currentPage: p }">
+          <td>{{medicine.medicineName}}</td>
+          <td>{{medicine.donationType}}</td>
+          <td>{{medicine.dose}}</td>
+          <td>{{medicine.quantity}}</td>
+          <td>{{medicine.manufactureDate}}</td>
+          <td>{{medicine.expireDate}}</td>
+          <td><a class="btn text-primary" (click)="onApprove(medicine.id)"><i class="fas fa-check-circle fa-lg"></i></a></td>
+          <td><a class="btn text-danger" (click)="onDelete(medicine.id)"><i class="fas fa-times-circle fa-lg"></i></a></td>
+        </tr>
+        </tbody>
+      </table>
+      <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    </div>
+  </div>
+</div>

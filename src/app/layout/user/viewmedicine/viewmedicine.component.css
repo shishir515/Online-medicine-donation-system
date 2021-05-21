@@ -1,0 +1,57 @@
+/* ================header Section =======================================*/
+.header {
+  height: 70px;
+  background-color: #4b4276;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  text-transform: uppercase;
+  padding-left: 15px;
+  cursor: pointer;
+  outline: none;
+}
+
+.profile{
+ position: relative;
+ top:-50px;
+ left: 95%;
+}
+
+.profile .img-profile {
+  height: 60px;
+  width: 60px;
+  border-radius: 60px;
+}
+
+/* =========================cardsection=================== */
+.card {
+  width: 1000px;
+  position: relative;
+  top: 20px;
+  left: 150px;
+}
+
+td{
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+h3{
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+/* ---title card */
+.viewmedcard {
+  width: 350px;
+  height: 80px;
+  margin-bottom: 30px;
+}
+/* ===============main table section========== */
+.viewmedicine {
+  height: 500px;
+}

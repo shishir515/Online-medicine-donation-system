@@ -1,0 +1,43 @@
+
+.side-section{
+  position: relative;
+  margin-left: 20px;
+  top: 30%;
+}
+
+.side-section .btn {
+  margin-left: 10px;
+}
+
+.card-donate{
+  background-color:#4b4276;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.why_quote{
+  position: relative;
+  top: 30%;
+  left: 10%;
+}
+
+.btn-content{
+  margin-bottom: 20px;
+}
+.btn-left{
+  margin-left: 10px;
+}
+
+img{
+  height: 250px;
+  width: 250px;
+}
+
+.map{
+  margin-top: 30px;
+}
+
+#map {
+ height: 50vh;
+ width: 220vh;
+}

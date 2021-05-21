@@ -1,0 +1,120 @@
+<!-- ============= Nav bar Section============== -->
+<div class="row">
+  <div class="col-12 header">
+    <h1 routerLink="/user">Medcare</h1>
+    <div class="profile">
+      <img src="../../../assets/final.jpg" class="img-profile">
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="card viewmedcard">
+      <div class="card-body">
+        <h2 class="text-center pb-4 bt-3">
+          <i class="fas fa-prescription-bottle-alt"></i>
+         Add Medicine
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+   <div class="add-medicine">
+    <form #form="ngForm" (submit)="onSubmit(form)">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label class="frm-control">Medicine Name</label>
+          <input
+          type="text"
+          class="form-control"
+          name="medicineName"
+          #medicineName="ngModel"
+          [(ngModel)]="service.formData.medicineName"
+          placeholder="Name of Medicine"
+          #medname="ngModel"
+          required
+          [class.is-invalid]="medname.invalid && medname.touched"
+          >
+          <span class="text-danger" [class.d-none]="medname.valid || medname.untouched">Medicine Name Required</span>
+        </div>
+        <div class="form-group col-md-6">
+          <label class="frm-control">Donation Type</label>
+          <select
+          class="form-control"
+          name="donationType"
+          #donationType="ngModel"
+          [(ngModel)]="service.formData.donationType"
+          required
+          [class.is-invalid]="donationType.invalid && donationType.touched">
+          <span class="text-danger" [class.d-none]="donationType.valid || donationType.untouched">Please Select</span>
+            <option selected [ngValue]="null">---Select---</option>
+            <option *ngFor="let item of DonationType" [value]="item">
+              {{item}}
+            </option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label class="frm-control">Dose</label>
+          <input
+          type="text"
+          class="form-control"
+          name="dose"
+          #dose="ngModel"
+          [(ngModel)]="service.formData.dose"
+          placeholder="Please mention Dose in mg"
+          required
+          [class.is-invalid]="dose.invalid && dose.touched">
+          <span class="text-danger" [class.d-none]="donationType.valid || donationType.untouched">Dose feild is Required</span>
+        </div>
+        <div class="form-group col-md-6">
+          <label class="frm-control">Quantity</label>
+          <input
+          type="text"
+          class="form-control"
+          name="quantity"
+          #quantity="ngModel"
+          [(ngModel)]="service.formData.quantity"
+          placeholder=" Please mention in ML or no.of Tablet"
+          required
+          [class.is-invalid]="quantity.invalid && quantity.touched">
+          <span class="text-danger" [class.d-none]="quantity.valid || quantity.untouched">Quantity is Required</span>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label class="frm-control">Manufacture Date</label>
+          <input
+          type="date"
+          class="form-control"
+          name="manufactureDate"
+          #manufactureDate="ngModel"
+          [(ngModel)]="service.formData.manufactureDate"
+          required
+          [class.is-invalid]="manufactureDate.invalid && manufactureDate.touched">
+          <span class="text-danger" [class.d-none]="manufactureDate.valid || manufactureDate.untouched">Manufacture Date is Required</span>
+        </div>
+        <div class="form-group col-md-6">
+          <label class="frm-control">Expiration Date</label>
+          <input
+          type="date"
+          class="form-control"
+          name="expireDate" #expireDate="ngModel"
+          [(ngModel)]="service.formData.expireDate"
+          required
+          [class.is-invalid]="expireDate.invalid && expireDate.touched">
+          <span class="text-danger" [class.d-none]="expireDate.valid || expireDate.untouched">Expire Date is Required</span>
+        </div>
+      </div>
+      <button class="btn btn-primary btn-lg btn-block" [disabled]="form.form.invalid">Submit</button>
+    </form>
+   </div>
+  </div>
+</div>
+<app-footer></app-footer>
+

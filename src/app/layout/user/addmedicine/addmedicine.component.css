@@ -1,0 +1,68 @@
+/* ================header Section =======================================*/
+.header {
+  height: 70px;
+  background-color: #4b4276;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  text-transform: uppercase;
+  padding-left: 15px;
+  outline: none;
+  cursor: pointer;
+}
+
+.profile{
+ position: relative;
+ top:-50px;
+ left: 95%;
+}
+
+.profile .img-profile {
+  height: 60px;
+  width: 60px;
+  border-radius: 60px;
+}
+
+/* ======Add medicine box */
+.add-medicine {
+  position: relative;
+  left: 19%;
+  top: 10%;
+  height: 500px;
+  width: 900px;
+  /* background-color: #4b4276; */
+}
+.add-medicine h2 {
+  margin-bottom: 50px;
+}
+input {
+  width: 300px;
+  border: 1px solid black;
+}
+
+select {
+  width: 300px;
+  border: 1px solid black;
+}
+.btn {
+  width: 755px;
+}
+
+label {
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* ---------card--------- */
+
+.viewmedcard {
+  position: relative;
+  top: 20px;
+  left: 250px;
+  width: 350px;
+  height: 80px;
+  margin-bottom: 30px;
+}

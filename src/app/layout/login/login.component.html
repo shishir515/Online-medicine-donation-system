@@ -1,0 +1,87 @@
+<div class="row">
+  <!-- ===============Header Section Start==================================== -->
+  <div class="col-12 header">
+    <h2 routerLink='/' style="cursor: pointer;">medcare</h2>
+    <div class="login-btn">
+      <button routerLink='/signup' class="btn btn-danger">Sign up</button>
+    </div>
+  </div>
+
+<!-- ================Side profile section=============================== -->
+  <div class="col-6">
+    <img class="img-responsive" src="../../../assets/Register and login.png" style="width: 100%;">
+  </div>
+
+<!-- =====================login page section============== -->
+  <div class="col-6">
+    <div class="card login-card">
+      <div class= "card-title social-login">
+        <ul>
+          <li>Sign in with</li>
+          <li><a (click)="googleSigninViaRedirect()" style="cursor: pointer;"><img src="../../../assets/google.png"></a></li>
+          <li><a (click)="facebookSignViaRedirect()" style="cursor: pointer;"><img src="../../../assets/facebook.png"></a></li>
+          <li><a (click)="githubSigninViaRedirect()" style="cursor: pointer;"><img src="../../../assets/github.png"></a></li>
+        </ul>
+        <hr>
+      </div>
+      <div class="card-body login-form">
+        <form #login="ngForm" (submit)="onSubmit()">
+          <div class="form-group">
+            <label for="Email" class="frm-control">Email address</label>
+            <input type="text"
+            class="form-control"
+            id="Email" aria-describedby="emailHelp"
+            placeholder="Enter email"
+            name="email"
+            [(ngModel)]='email'
+            #emailvalid="ngModel"
+            required
+            [class.is-invalid]="emailvalid.invalid && emailvalid.touched"
+            >
+            <span class="text-danger" [class.d-none]="emailvalid.valid || emailvalid.untouched">Email is Required</span>
+          </div>
+          <div class="form-group">
+            <label for="Password" class="frm-control">Password</label>
+            <input type="password"
+             class="form-control"
+             id="Password"
+             placeholder="Password"
+             pattern=''
+             name="password"
+             [(ngModel)]='password'
+             required
+             #passwordvalid="ngModel"
+             [class.is-invalid]="passwordvalid.invalid && passwordvalid.touched">
+             <span class="text-danger" [class.d-none]="passwordvalid.valid || passwordvalid.untouched">Password is Required</span>
+          </div>
+          <div class="form-check">
+            <input
+            type="checkbox"
+            class="form-check-input"
+            id="Check"
+            name="checkbox"
+            ngModel
+            #checkbox="ngModel"
+            >
+            <label class="form-check-label" for="exampleCheck1" class="frm-control">Remember Me</label>
+          </div>
+          <button type="submit" class="btn btn-primary" [disabled]='login.form.invalid'>Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+   <!-- =====================End oflogin page section============== -->
+
+<!-- =====================Footer section============== -->
+<div class="col-12 footer">
+  <div class="social-link">
+    <ul>
+      <li><a href="#"><img src="../../../assets/facebook 64.png"></a></li>
+      <li><a href="#"><img src="../../../assets/instagram 32.png"></a></li>
+      <li><a href="#"><img src="../../../assets/twitter 32.png"></a></li>
+      <li><a href="#"><img src="../../../assets/gmail 32.png"></a></li>
+    </ul>
+  </div>
+</div>
+  <!-- ===================end of Footer section============== -->
+</div>

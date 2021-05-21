@@ -1,0 +1,91 @@
+<h3><i class="fas fa-kaaba"></i>Add NGOs</h3>
+<div class="row">
+  <div class="col-12">
+   <div class="add-medicine">
+    <form #form="ngForm" (submit) ="onSubmit(form)" >
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label class="frm-control">Name of NGOs</label>
+          <input
+          type="text"
+          class="form-control"
+          name="ngoName"
+          #ngoName="ngModel"
+          ngModel
+          required
+          [class.is-invalid]="ngoName.invalid && ngoName.touched"
+          >
+          <span class="text-danger" [class.d-none]="ngoName.valid || ngoName.untouched">Name is Required</span>
+        </div>
+        <div class="form-group col-md-6">
+          <label class="frm-control">Country</label>
+          <input
+          type="text"
+          class="form-control"
+          name="country"
+          #country="ngModel"
+         ngModel
+         required
+         [class.is-invalid]="country.invalid && country.touched"
+         >
+         <span class="text-danger"[class.d-none]="country.valid || country.untouched">Country is Required</span>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label class="frm-control">Verification Id</label>
+          <input
+          type="text"
+          class="form-control"
+          name="vId"
+          #vId="ngModel"
+          ngModel
+          required
+          [class.is-invalid]="vId.invalid && vId.touched">
+          <span class="text-danger" [class.d-none]="vId.valid || vId.untouched">Verification code is Required</span>
+        </div>
+        <div class="form-group col-md-6">
+          <label class="frm-control">City</label>
+          <input
+          type="text"
+          class="form-control"
+          name="city"
+          #city="ngModel"
+          ngModel
+          required
+          [class.is-invalid]="city.invalid && city.touched">
+          <span class="text-danger" [class.d-none]="city.valid || city.untouched">City is Required</span>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label class="frm-control">E-Mail</label>
+          <input
+          type="text"
+          class="form-control"
+          name="email"
+          #email="ngModel"
+          ngModel
+          [class.is-invalid]="email.invalid && email.touched"
+          required
+          >
+          <span class="text-danger" [class.d-none]="email.valid || email.untouched"> Email is Required</span>
+        </div>
+
+        <div class="form-group col-md-6">
+          <label class="frm-control">Type</label>
+          <input
+          type="text"
+          class="form-control"
+          name="type"
+          #type="ngModel"
+          ngModel
+          required
+          [class.is-invalid]="type.invalid && type.touched">
+        </div>
+      </div>
+      <button class="btn btn-primary btn-lg btn-block" [disabled]='form.form.invalid'>Add NGOs</button>
+    </form>
+   </div>
+  </div>
+</div>

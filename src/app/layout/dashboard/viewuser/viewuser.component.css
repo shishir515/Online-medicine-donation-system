@@ -1,0 +1,10 @@
+h3 {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.search input {
+  width: 300px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}

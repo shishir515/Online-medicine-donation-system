@@ -1,0 +1,77 @@
+/*=================== signup Header==================== */
+.header{
+  height: 70px;
+  background-color: #4b4276;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.header h2 {
+  text-transform: uppercase;
+  margin-top: 10px;
+  outline: none;
+  cursor: pointer;
+}
+.login-btn{
+  position: relative;
+  left: 90%;
+  top: -55%;
+
+}
+
+/* ============signup login card===================== */
+.login-card{
+  position: relative;
+  top: 3%;
+  /* margin-top: 30px; */
+}
+.social-login{
+  margin-left: 60px;
+}
+.social-login ul li {
+  list-style: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  padding-left: 0;
+}
+
+.login-form{
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.form-group{
+  padding-bottom: 10px;
+}
+.frm-control{
+  padding-bottom: 10px;
+}
+
+.footer {
+  height: 100px;
+  margin-top: 30px;
+  background-color: #594F8D;
+  color: #fff;
+}
+
+.social-link{
+  position: relative;
+  left: 70%;
+}
+
+/* .social-link ul {
+  list-style: none;
+  text-decoration: none;
+} */
+.social-link ul li {
+  display: inline-block;
+  color: white;
+  padding: 10px;
+}
+
+.social-link ul li a {
+  list-style: none;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}

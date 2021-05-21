@@ -1,0 +1,104 @@
+/* ================header Section =======================================*/
+.header {
+  height: 70px;
+  background-color: #4b4276;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  text-transform: uppercase;
+  padding-left: 15px;
+  outline: none;
+}
+
+.profile{
+ position: relative;
+ top:-50px;
+ left: 90%;
+}
+.btn {
+  margin-right: 10px;
+}
+.name {
+  position:absolute;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 400;
+  top: 10px;
+  left: -150px;
+}
+.profile .img-profile {
+  height: 60px;
+  width: 60px;
+  border-radius: 60px;
+}
+
+/* =================== user section================== */
+.user-landing{
+  margin-top: 50px;
+  /* position: relative; */
+}
+
+.btn-start {
+  position: relative;
+  left: 45%;
+  margin-top: -80px;
+}
+.btn-group {
+  position: relative;
+  left: 28%;
+  margin-top: 80px;
+}
+
+.btn-action{
+  margin: 10px;
+  background-color: #2E008B;
+}
+.organization-first{
+  margin-top: 100px;
+  color: #2699FB;
+}
+
+.organization-first h3 {
+  margin-bottom: 30px;
+}
+
+.organization-second {
+  margin-top: 30px;
+}
+
+/* ================How it work section======== */
+ul li {
+  text-decoration: none;
+  padding: 20px;
+  margin: 30px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.card {
+  height: 130px;
+  width: 400px;
+}
+
+.card img {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.text-title{
+  position: absolute;
+  left: 25%;
+  color: #2E008B;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.text-second {
+  position: absolute;
+  left: 45%;
+  color: #2E008B;
+  font-size: 20px;
+  font-weight: 500;
+}

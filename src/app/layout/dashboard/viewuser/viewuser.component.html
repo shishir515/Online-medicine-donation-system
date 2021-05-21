@@ -1,0 +1,25 @@
+<h3><i class="fa fa-users"></i>View Users</h3>
+<div class="search">
+  <input class="form-control" type="text"[(ngModel)]="userFilter.fullName" placeholder="Search Users">
+</div>
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <table class="table table-hover">
+        <thead>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Email</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of list | filterBy: userFilter | paginate: { itemsPerPage: 5, currentPage: p}">
+          <td>{{user.fullName}}</td>
+          <td>{{user.address}}</td>
+          <td>{{user.email}}</td>
+        </tr>
+        </tbody>
+      </table>
+      <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    </div>
+  </div>
+</div>

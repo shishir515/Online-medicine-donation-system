@@ -1,0 +1,126 @@
+/* ================header Section =======================================*/
+.header {
+  height: 70px;
+  background-color: #4b4276;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  text-transform: uppercase;
+  padding-left: 15px;
+}
+
+.profile{
+ position: relative;
+ top:-50px;
+ left: 95%;
+}
+
+.profile .img-profile {
+  height: 60px;
+  width: 60px;
+  border-radius: 60px;
+}
+
+/*  End of the header section style */
+
+/*  =============Dashboard Main view Section============================ */
+.wrapper{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper .sidebar {
+  width: 100%;
+  height: 450px;
+  background-color: #4b4276;
+  padding: 30px 0;
+
+}
+
+.sidebar ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+}
+.wrapper .sidebar h2 {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wrapper .sidebar ul li{
+  padding: 15px;
+  border-radius: 1px solid rgba(0,0,0,0.5);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.wrapper .sidebar ul li a{
+  color:#bdb8d7;
+  display: block;
+
+}
+
+.wrapper .sidebar ul li a .fas{
+  width: 25px;
+}
+
+.wrapper .sidebar ul li:hover {
+  background: #594F8D;
+}
+
+.wrapper .sidebar ul li:hover a {
+  color:#fff;
+}
+
+.btn-logout{
+  position: absolute;
+  left: 100px;
+}
+
+/* ====================Recent received and stock section============ */
+.recent{
+  margin-top: 25px;
+}
+/* ====================Recent received and stock section============ */
+
+
+
+/*  =========== End ofDashboard Main view Section============================ */
+
+/* ================ Footer section style =========================== */
+.footer {
+  height: 100px;
+  margin-top: 30px;
+  background-color: #594F8D;
+  color: #fff;
+}
+
+.social-link{
+  position: relative;
+  left: 70%;
+}
+
+/* .social-link ul {
+  list-style: none;
+  text-decoration: none;
+} */
+.social-link ul li {
+  display: inline-block;
+  color: white;
+  padding: 10px;
+}
+
+.social-link ul li a {
+  list-style: none;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
