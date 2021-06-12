@@ -14,7 +14,7 @@
       <div class="card-body">
         <h2 class="text-center pb-4 bt-3">
           <i class="fas fa-prescription-bottle-alt"></i>
-          Add Medicine
+          Request Medicine
         </h2>
       </div>
     </div>
@@ -33,7 +33,7 @@
               class="form-control"
               name="medicineName"
               #medicineName="ngModel"
-              [(ngModel)]="service.formData.medicineName"
+              [(ngModel)]="service.requestformData.medicineName"
               placeholder="Name of Medicine"
               #medname="ngModel"
               required
@@ -45,13 +45,50 @@
               >Medicine Name Required</span
             >
           </div>
+
+          <div class="form-group col-md-6">
+            <label class="frm-control">Dose</label>
+            <input
+              type="text"
+              class="form-control"
+              name="dose"
+              #dose="ngModel"
+              [(ngModel)]="service.requestformData.dose"
+              placeholder="Please mention Dose in mg"
+              required
+              [class.is-invalid]="dose.invalid && dose.touched"
+            />
+            <span
+              class="text-danger"
+              [class.d-none]="dose.valid || dose.untouched"
+              >Dose feild is Required</span
+            >
+          </div>
+          <div class="form-group col-md-6">
+            <label class="frm-control">Quantity</label>
+            <input
+              type="number"
+              class="form-control"
+              name="quantity"
+              #quantity="ngModel"
+              [(ngModel)]="service.requestformData.quantity"
+              placeholder=" Please mention in ML or no.of Tablet"
+              required
+              [class.is-invalid]="quantity.invalid && quantity.touched"
+            />
+            <span
+              class="text-danger"
+              [class.d-none]="quantity.valid || quantity.untouched"
+              >Quantity is Required</span
+            >
+          </div>
           <div class="form-group col-md-6">
             <label class="frm-control">Donation Type</label>
             <select
               class="form-control"
               name="donationType"
               #donationType="ngModel"
-              [(ngModel)]="service.formData.donationType"
+              [(ngModel)]="service.requestformData.donationType"
               required
               [class.is-invalid]="donationType.invalid && donationType.touched"
             >
@@ -65,84 +102,6 @@
                 {{ item }}
               </option>
             </select>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label class="frm-control">Dose</label>
-            <input
-              type="text"
-              class="form-control"
-              name="dose"
-              #dose="ngModel"
-              [(ngModel)]="service.formData.dose"
-              placeholder="Please mention Dose in mg"
-              required
-              [class.is-invalid]="dose.invalid && dose.touched"
-            />
-            <span
-              class="text-danger"
-              [class.d-none]="donationType.valid || donationType.untouched"
-              >Dose feild is Required</span
-            >
-          </div>
-          <div class="form-group col-md-6">
-            <label class="frm-control">Quantity</label>
-            <input
-              type="number"
-              class="form-control"
-              name="quantity"
-              #quantity="ngModel"
-              [(ngModel)]="service.formData.quantity"
-              placeholder=" Please mention in ML or no.of Tablet"
-              required
-              [class.is-invalid]="quantity.invalid && quantity.touched"
-            />
-            <span
-              class="text-danger"
-              [class.d-none]="quantity.valid || quantity.untouched"
-              >Quantity is Required</span
-            >
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label class="frm-control">Manufacture Date</label>
-            <input
-              type="date"
-              class="form-control"
-              name="manufactureDate"
-              #manufactureDate="ngModel"
-              [(ngModel)]="service.formData.manufactureDate"
-              required
-              [class.is-invalid]="
-                manufactureDate.invalid && manufactureDate.touched
-              "
-            />
-            <span
-              class="text-danger"
-              [class.d-none]="
-                manufactureDate.valid || manufactureDate.untouched
-              "
-              >Manufacture Date is Required</span
-            >
-          </div>
-          <div class="form-group col-md-6">
-            <label class="frm-control">Expiration Date</label>
-            <input
-              type="date"
-              class="form-control"
-              name="expireDate"
-              #expireDate="ngModel"
-              [(ngModel)]="service.formData.expireDate"
-              required
-              [class.is-invalid]="expireDate.invalid && expireDate.touched"
-            />
-            <span
-              class="text-danger"
-              [class.d-none]="expireDate.valid || expireDate.untouched"
-              >Expire Date is Required</span
-            >
           </div>
         </div>
         <button

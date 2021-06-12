@@ -4,8 +4,8 @@
     <h1>Medcare</h1>
     <div class="profile">
       <button class="btn btn-danger" (click)="onlogout()">logout</button>
-      <p class="name">{{loggedInUser}}</p>
-      <img [src]="pictureUrl" class="img-profile">
+      <p class="name">{{ loggedInUser }}</p>
+      <img [src]="pictureUrl" class="img-profile" />
     </div>
   </div>
 </div>
@@ -15,12 +15,23 @@
   <div class="col-12">
     <div class="user-landing">
       <h1 class="text-center">Health is Wealth</h1>
-    <h4 class="text-center">"Our mission is to provide medicine to needy one"</h4>
-    <button class="btn btn-lg btn-warning btn-start">Start Now</button>
+      <h4 class="text-center">
+        "Our mission is to provide medicine to needy one"
+      </h4>
+      <button class="btn btn-lg btn-warning btn-start">Start Now</button>
       <div class="btn-group">
-        <button routerLink="/viewall" class="btn btn-primary btn-action">Last Donate</button>
-        <button routerLink="/add" class="btn btn-primary btn-action">Donate Now</button>
-        <button routerLink="/viewall" class="btn btn-primary btn-action">View All</button>
+        <button routerLink="/viewall" class="btn btn-primary btn-action">
+          Last Donate
+        </button>
+        <button routerLink="/add" class="btn btn-primary btn-action">
+          Donate Now
+        </button>
+        <button routerLink="/viewall" class="btn btn-primary btn-action">
+          View All
+        </button>
+        <button routerLink="/request-med" class="btn btn-primary btn-action">
+          Request Medicine
+        </button>
       </div>
     </div>
   </div>
@@ -32,28 +43,52 @@
     <div class="row">
       <div class="col-sm-4">
         <div class="card">
-          <img class="card-img-top" src="../../../../assets/Home-Brewers-Association-Best-Logos-e1329712441105.png" alt="Card image cap" style="width: 55px; height: 55px;">
-          <p class="text-title">American Home Brewer<br> Association</p>
+          <img
+            class="card-img-top"
+            src="../../../../assets/Home-Brewers-Association-Best-Logos-e1329712441105.png"
+            alt="Card image cap"
+            style="width: 55px; height: 55px"
+          />
+          <p class="text-title">
+            American Home Brewer<br />
+            Association
+          </p>
           <div class="card-body">
-            <h5 class="card-title">Status: Veridied</h5>
+            <h5 class="card-title">Status: Verified</h5>
           </div>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="card">
-          <img class="card-img-top" src="../../../../assets/Memphis-Zoo-Logo-e1329712838848.png" alt="Card image cap" style="width: 55px; height: 55px;">
-          <p class="text-title">Memphis Zoo<br> Association</p>
+          <img
+            class="card-img-top"
+            src="../../../../assets/Memphis-Zoo-Logo-e1329712838848.png"
+            alt="Card image cap"
+            style="width: 55px; height: 55px"
+          />
+          <p class="text-title">
+            Memphis Zoo<br />
+            Association
+          </p>
           <div class="card-body">
-            <h5 class="card-title">Status: Veridied</h5>
+            <h5 class="card-title">Status: Verified</h5>
           </div>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="card">
-          <img class="card-img-top" src="../../../../assets/savechildren.png" alt="Card image cap" style="width: 55px; height: 55px;">
-          <p class="text-title">Save Children<br> Association</p>
+          <img
+            class="card-img-top"
+            src="../../../../assets/savechildren.png"
+            alt="Card image cap"
+            style="width: 55px; height: 55px"
+          />
+          <p class="text-title">
+            Save Children<br />
+            Association
+          </p>
           <div class="card-body">
-            <h5 class="card-title">Status: Veridied</h5>
+            <h5 class="card-title">Status: Verified</h5>
           </div>
         </div>
       </div>
@@ -62,28 +97,46 @@
     <div class="row organization-second">
       <div class="col-sm-4">
         <div class="card">
-          <img class="card-img-top" src="../../../../assets/wasti.png" alt="Card image cap" style="width: 120px; height: 50px;">
-          <p class="text-second">Watsi<br> Association</p>
+          <img
+            class="card-img-top"
+            src="../../../../assets/wasti.png"
+            alt="Card image cap"
+            style="width: 120px; height: 50px"
+          />
+          <p class="text-second">
+            Watsi<br />
+            Association
+          </p>
           <div class="card-body">
-            <h5 class="card-title">Status: Veridied</h5>
+            <h5 class="card-title">Status: Verified</h5>
           </div>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="card">
-          <p class="text-second">Turnstone <br>Organization</p>
-          <img class="card-img-top" src="../../../../assets/Turnstone-non-profit-e1329714009514.png" alt="Card image cap" style="width: 120px; height: 50px;">
+          <p class="text-second">Turnstone <br />Organization</p>
+          <img
+            class="card-img-top"
+            src="../../../../assets/Turnstone-non-profit-e1329714009514.png"
+            alt="Card image cap"
+            style="width: 120px; height: 50px"
+          />
           <div class="card-body">
-            <h5 class="card-title">Status: Veridied</h5>
+            <h5 class="card-title">Status: Verified</h5>
           </div>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="card">
-          <p class="text-second">Conservational <br>International</p>
-          <img class="card-img-top" src="../../../../assets/Conservation-International-e1329711262719.png" alt="Card image cap" style="width: 120px; height: 50px;">
+          <p class="text-second">Conservational <br />International</p>
+          <img
+            class="card-img-top"
+            src="../../../../assets/Conservation-International-e1329711262719.png"
+            alt="Card image cap"
+            style="width: 120px; height: 50px"
+          />
           <div class="card-body">
-            <h5 class="card-title">Status: Veridied</h5>
+            <h5 class="card-title">Status: Verified</h5>
           </div>
         </div>
       </div>
@@ -97,16 +150,19 @@
     <h3 class="text-center organization-first">How It Work</h3>
     <div class="row">
       <div class="col-6">
-        <img src="../../../../assets/howitwork.png" style="width: 600px; height: 400px;">
-    </div>
-    <!-- ================ How it work contents section=================== -->
-    <div class="col-6">
-      <ul>
-        <li>You Donate Medicine</li>
-        <li>Admin verify your Request</li>
-        <li>NGO Distribute to needy one</li>
-      </ul>
-    </div>
+        <img
+          src="../../../../assets/howitwork.png"
+          style="width: 600px; height: 400px"
+        />
+      </div>
+      <!-- ================ How it work contents section=================== -->
+      <div class="col-6">
+        <ul>
+          <li>You Donate Medicine</li>
+          <li>Admin verify your Request</li>
+          <li>NGO Distribute to needy one</li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>

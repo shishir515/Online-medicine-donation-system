@@ -12,16 +12,16 @@
   outline: none;
 }
 
-.profile{
- position: relative;
- top:-50px;
- left: 90%;
+.profile {
+  position: relative;
+  top: -50px;
+  left: 90%;
 }
 .btn {
   margin-right: 10px;
 }
 .name {
-  position:absolute;
+  position: absolute;
   text-transform: capitalize;
   font-size: 20px;
   font-weight: 400;
@@ -35,7 +35,7 @@
 }
 
 /* =================== user section================== */
-.user-landing{
+.user-landing {
   margin-top: 50px;
   /* position: relative; */
 }
@@ -47,17 +47,17 @@
 }
 .btn-group {
   position: relative;
-  left: 28%;
+  left: 22%;
   margin-top: 80px;
 }
 
-.btn-action{
+.btn-action {
   margin: 10px;
-  background-color: #2E008B;
+  background-color: #2e008b;
 }
-.organization-first{
+.organization-first {
   margin-top: 100px;
-  color: #2699FB;
+  color: #2699fb;
 }
 
 .organization-first h3 {
@@ -87,10 +87,10 @@ ul li {
   margin-top: 10px;
 }
 
-.text-title{
+.text-title {
   position: absolute;
   left: 25%;
-  color: #2E008B;
+  color: #2e008b;
   font-size: 20px;
   font-weight: 500;
 }
@@ -98,7 +98,7 @@ ul li {
 .text-second {
   position: absolute;
   left: 45%;
-  color: #2E008B;
+  color: #2e008b;
   font-size: 20px;
   font-weight: 500;
 }

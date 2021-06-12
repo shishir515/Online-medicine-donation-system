@@ -3,7 +3,7 @@ export class Medicine {
   medicineName: string;
   donationType: string;
   dose: string;
-  quantity: string;
+  quantity: number;
   manufactureDate: string;
   expireDate: string;
 }

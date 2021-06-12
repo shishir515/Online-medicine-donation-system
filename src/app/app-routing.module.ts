@@ -19,7 +19,8 @@ import {
   AngularFireAuthGuard,
   redirectUnauthorizedTo,
 } from "@angular/fire/auth-guard";
-import { RequestMedicineComponent } from "./layout/dashboard/request-medicine/request-medicine.component";
+import { RequestmedicineComponent } from "./layout/user/requestmedicine/requestmedicine.component";
+import { MedicineRequestsComponent } from "./layout/dashboard/medicine-requests/medicine-requests.component";
 
 const redirectUnauthorizedToLogin = () => redirectUnauthorizedTo(["login"]);
 
@@ -37,6 +38,12 @@ const routes: Routes = [
   {
     path: "add",
     component: AddmedicineComponent,
+    canActivate: [AngularFireAuthGuard],
+    data: { authGuardPipe: redirectUnauthorizedToLogin },
+  },
+  {
+    path: "request-med",
+    component: RequestmedicineComponent,
     canActivate: [AngularFireAuthGuard],
     data: { authGuardPipe: redirectUnauthorizedToLogin },
   },
@@ -60,8 +67,8 @@ const routes: Routes = [
       { path: "stock", component: ViewstockComponent },
       { path: "user", component: ViewuserComponent },
       { path: "request", component: ViewRequestComponent },
+      { path: "medicine-requests", component: MedicineRequestsComponent },
       { path: "ngo", component: AddNGOComponent },
-      { path: "request-med", component: RequestMedicineComponent },
     ],
   },
 ];

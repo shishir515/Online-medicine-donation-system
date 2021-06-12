@@ -5,14 +5,13 @@
 export const environment = {
   production: false,
   firebaseConfig: {
-    apiKey: "AIzaSyCScU51cEyMwgapDfXKvXCpls0gXgMwB40",
-    authDomain: "medcare-e16b2.firebaseapp.com",
-    databaseURL: "https://medcare-e16b2.firebaseio.com",
-    projectId: "medcare-e16b2",
-    storageBucket: "medcare-e16b2.appspot.com",
-    messagingSenderId: "117673156971",
-    appId: "1:117673156971:web:1b5fa5662184b1150aec2e"
-  }
+    apiKey: "AIzaSyBrN2mPPvrpTIayJvvj6wEAdfICAKh6g9U",
+    authDomain: "medcare5515.firebaseapp.com",
+    projectId: "medcare5515",
+    storageBucket: "medcare5515.appspot.com",
+    messagingSenderId: "228331230219",
+    appId: "1:228331230219:web:8dd1c30d1f25b5c26aa30e",
+  },
 };
 
 /*
