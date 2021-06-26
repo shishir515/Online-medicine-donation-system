@@ -11,10 +11,10 @@
   padding-left: 15px;
 }
 
-.profile{
- position: relative;
- top:-50px;
- left: 95%;
+.profile {
+  position: relative;
+  top: -50px;
+  left: 95%;
 }
 
 .profile .img-profile {
@@ -26,7 +26,7 @@
 /*  End of the header section style */
 
 /*  =============Dashboard Main view Section============================ */
-.wrapper{
+.wrapper {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -34,10 +34,9 @@
 
 .wrapper .sidebar {
   width: 100%;
-  height: 450px;
+  height: 500px;
   background-color: #4b4276;
   padding: 30px 0;
-
 }
 
 .sidebar ul {
@@ -55,42 +54,39 @@
   margin-bottom: 30px;
 }
 
-.wrapper .sidebar ul li{
+.wrapper .sidebar ul li {
   padding: 15px;
-  border-radius: 1px solid rgba(0,0,0,0.5);
-  border-top: 1px solid rgba(255,255,255,0.05);
+  border-radius: 1px solid rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.wrapper .sidebar ul li a{
-  color:#bdb8d7;
+.wrapper .sidebar ul li a {
+  color: #bdb8d7;
   display: block;
-
 }
 
-.wrapper .sidebar ul li a .fas{
+.wrapper .sidebar ul li a .fas {
   width: 25px;
 }
 
 .wrapper .sidebar ul li:hover {
-  background: #594F8D;
+  background: #594f8d;
 }
 
 .wrapper .sidebar ul li:hover a {
-  color:#fff;
+  color: #fff;
 }
 
-.btn-logout{
+.btn-logout {
   position: absolute;
   left: 100px;
 }
 
 /* ====================Recent received and stock section============ */
-.recent{
+.recent {
   margin-top: 25px;
 }
 /* ====================Recent received and stock section============ */
-
-
 
 /*  =========== End ofDashboard Main view Section============================ */
 
@@ -98,11 +94,11 @@
 .footer {
   height: 100px;
   margin-top: 30px;
-  background-color: #594F8D;
+  background-color: #594f8d;
   color: #fff;
 }
 
-.social-link{
+.social-link {
   position: relative;
   left: 70%;
 }
@@ -123,4 +119,3 @@
   text-decoration: none;
   font-size: 20px;
 }
-

@@ -84,18 +84,6 @@ export class MedicineRequestsComponent implements OnInit {
             return;
           }
         });
-
-      //  this.firestore
-      // .doc("medicine-requests/" + id)
-      // .update({ status: "completed" })
-      // .then((data) => {
-      //   console.log(data);
-      //   this.firestore
-      //     .doc("approved-medicine")
-      //     .update({ status: "completed" });
-      // })
-      // .catch((data) => console.log(data));
-      // this.toastr.success("Approve Sucessfully", "Medicine Approved");
     }
   }
 }

@@ -1,0 +1,14 @@
+<!-- ============= Nav bar Section============== -->
+<div class="row">
+  <div class="col-12 header">
+    <h1>Medcare</h1>
+    <div class="profile">
+      <button class="btn btn-danger" (click)="onlogout()">logout</button>
+      <p class="name">{{ loggedInUser }}</p>
+      <img [src]="pictureUrl" class="img-profile" />
+    </div>
+  </div>
+</div>
+<app-chat></app-chat>
+
+<app-footer></app-footer>

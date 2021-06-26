@@ -1,0 +1,29 @@
+.chat-selector {
+  height: fit-content;
+  border: 1px solid grey;
+  border-radius: 4px;
+  width: 100%;
+  padding: 1rem;
+}
+.chat-selector:hover {
+  background-color: #c0c0c0;
+  cursor: pointer;
+}
+.selected {
+  background-color: #cecece;
+}
+.selector-container {
+  width: 40%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.chat-container {
+  width: 60%;
+}
+.chats {
+  width: 100%;
+  display: flex;
+  background-color: #eee;
+  margin-right: 1rem;
+}

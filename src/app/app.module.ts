@@ -43,7 +43,10 @@ import { NgxPaginationModule } from "ngx-pagination";
 import { FilterPipeModule } from "ngx-filter-pipe";
 import { DropdownDirective } from "./shared/dropdown.directive";
 import { RequestmedicineComponent } from "./layout/user/requestmedicine/requestmedicine.component";
-import { MedicineRequestsComponent } from './layout/dashboard/medicine-requests/medicine-requests.component';
+import { MedicineRequestsComponent } from "./layout/dashboard/medicine-requests/medicine-requests.component";
+import { ChatComponent } from "./layout/chat/chat.component";
+import { AdminChatComponent } from "./layout/dashboard/admin-chat/admin-chat.component";
+import { UserChatComponent } from './layout/user/user-chat/user-chat.component';
 
 @NgModule({
   declarations: [
@@ -66,6 +69,9 @@ import { MedicineRequestsComponent } from './layout/dashboard/medicine-requests/
     DropdownDirective,
     RequestmedicineComponent,
     MedicineRequestsComponent,
+    ChatComponent,
+    AdminChatComponent,
+    UserChatComponent,
   ],
   imports: [
     BrowserModule,

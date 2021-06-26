@@ -21,6 +21,10 @@ import {
 } from "@angular/fire/auth-guard";
 import { RequestmedicineComponent } from "./layout/user/requestmedicine/requestmedicine.component";
 import { MedicineRequestsComponent } from "./layout/dashboard/medicine-requests/medicine-requests.component";
+import { ChatComponent } from "./layout/chat/chat.component";
+import { AdminChatComponent } from "./layout/dashboard/admin-chat/admin-chat.component";
+import { User } from "./shared/user.model";
+import { UserChatComponent } from "./layout/user/user-chat/user-chat.component";
 
 const redirectUnauthorizedToLogin = () => redirectUnauthorizedTo(["login"]);
 
@@ -38,6 +42,12 @@ const routes: Routes = [
   {
     path: "add",
     component: AddmedicineComponent,
+    canActivate: [AngularFireAuthGuard],
+    data: { authGuardPipe: redirectUnauthorizedToLogin },
+  },
+  {
+    path: "chat",
+    component: UserChatComponent,
     canActivate: [AngularFireAuthGuard],
     data: { authGuardPipe: redirectUnauthorizedToLogin },
   },
@@ -69,6 +79,7 @@ const routes: Routes = [
       { path: "request", component: ViewRequestComponent },
       { path: "medicine-requests", component: MedicineRequestsComponent },
       { path: "ngo", component: AddNGOComponent },
+      { path: "chat", component: AdminChatComponent },
     ],
   },
 ];

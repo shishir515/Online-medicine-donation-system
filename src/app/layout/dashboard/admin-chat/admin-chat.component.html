@@ -1,0 +1,21 @@
+<div class="chats">
+  <div class="selector-container">
+    <h3>Select chats</h3>
+    <div
+      class="chat-selector"
+      [class.selected]="item.id == selectedChat.id"
+      *ngFor="let item of chats"
+    >
+      <div class="chat-user" (click)="this.setSelectedChat(item)">
+        {{ item.email }}
+      </div>
+    </div>
+  </div>
+  <div class="chat-container">
+    <app-chat
+      mode="admin"
+      [userId]="selectedChat.id"
+      [email]="selectedChat.email"
+    ></app-chat>
+  </div>
+</div>
