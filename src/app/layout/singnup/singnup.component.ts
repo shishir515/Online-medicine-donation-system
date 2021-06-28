@@ -35,7 +35,7 @@ export class SingnupComponent implements OnInit {
       .register(this.email, this.password)
       .then((res) => {
         console.log(res);
-        this.router.navigate(["/user"]);
+        this.router.navigate(["/login"]);
       })
       .catch((err) => {
         console.log("User is not Register");
