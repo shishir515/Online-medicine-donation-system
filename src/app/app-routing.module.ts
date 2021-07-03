@@ -1,4 +1,4 @@
-import { ViewmedicineComponent } from "./layout/user/viewmedicine/viewmedicine.component";
+import { ViewDonatedComponent } from "./layout/user/viewdonated/viewdonated.component";
 import { UserpageComponent } from "./layout/user/userpage/userpage.component";
 import { AddNGOComponent } from "./layout/dashboard/add-ngo/add-ngo.component";
 import { ViewuserComponent } from "./layout/dashboard/viewuser/viewuser.component";
@@ -25,6 +25,7 @@ import { ChatComponent } from "./layout/chat/chat.component";
 import { AdminChatComponent } from "./layout/dashboard/admin-chat/admin-chat.component";
 import { User } from "./shared/user.model";
 import { UserChatComponent } from "./layout/user/user-chat/user-chat.component";
+import { ViewmedicineComponent } from "./layout/user/viewmedicine/viewmedicine.component";
 
 const redirectUnauthorizedToLogin = () => redirectUnauthorizedTo(["login"]);
 
@@ -61,6 +62,12 @@ const routes: Routes = [
   {
     path: "viewall",
     component: ViewmedicineComponent,
+    canActivate: [AngularFireAuthGuard],
+    data: { authGuardPipe: redirectUnauthorizedToLogin },
+  },
+  {
+    path: "viewdonated",
+    component: ViewDonatedComponent,
     canActivate: [AngularFireAuthGuard],
     data: { authGuardPipe: redirectUnauthorizedToLogin },
   },

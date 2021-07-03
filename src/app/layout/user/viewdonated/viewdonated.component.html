@@ -1,0 +1,48 @@
+<div class="row">
+  <div class="col-12 header">
+    <h1 routerLink="/user">Medcare</h1>
+    <div class="profile">
+      <img src="../../../assets/final.jpg" class="img-profile" />
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-8">
+    <div class="card viewmedcard">
+      <div class="card-body">
+        <h2 class="text-center pb-4 bt-3">
+          <i class="fas fa-clinic-medical"></i>
+          Accepted
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12 viewmedicine">
+    <div class="card">
+      <table class="table table-hover">
+        <thead>
+          <th>Medicine Name</th>
+          <th>Donation Type</th>
+          <th>Dose</th>
+          <th>Quantity</th>
+          <th>Manufactre Date</th>
+          <th>Expiration Date</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let medicine of list">
+            <td>{{ medicine.medicineName }}</td>
+            <td>{{ medicine.donationType }}</td>
+            <td>{{ medicine.dose }}</td>
+            <td>{{ medicine.quantity }}</td>
+            <td>{{ medicine.manufactureDate }}</td>
+            <td>{{ medicine.expireDate }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

@@ -13,10 +13,10 @@
   outline: none;
 }
 
-.profile {
-  position: relative;
-  top: -50px;
-  left: 95%;
+.profile{
+ position: relative;
+ top:-50px;
+ left: 95%;
 }
 
 .profile .img-profile {
@@ -33,13 +33,13 @@
   left: 150px;
 }
 
-td {
+td{
   color: black;
   font-size: 15px;
   font-weight: 500;
 }
 
-h3 {
+h3{
   margin-top: 10px;
   margin-bottom: 30px;
   padding: 10px;

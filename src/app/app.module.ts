@@ -22,7 +22,7 @@ import { AddNGOComponent } from "./layout/dashboard/add-ngo/add-ngo.component";
 import { ViewRequestComponent } from "./layout/dashboard/view-request/view-request.component";
 import { UserpageComponent } from "./layout/user/userpage/userpage.component";
 import { AddmedicineComponent } from "./layout/user/addmedicine/addmedicine.component";
-import { ViewmedicineComponent } from "./layout/user/viewmedicine/viewmedicine.component";
+import { ViewDonatedComponent } from "./layout/user/viewdonated/viewdonated.component";
 
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
@@ -46,7 +46,8 @@ import { RequestmedicineComponent } from "./layout/user/requestmedicine/requestm
 import { MedicineRequestsComponent } from "./layout/dashboard/medicine-requests/medicine-requests.component";
 import { ChatComponent } from "./layout/chat/chat.component";
 import { AdminChatComponent } from "./layout/dashboard/admin-chat/admin-chat.component";
-import { UserChatComponent } from './layout/user/user-chat/user-chat.component';
+import { UserChatComponent } from "./layout/user/user-chat/user-chat.component";
+import { ViewmedicineComponent } from "./layout/user/viewmedicine/viewmedicine.component";
 
 @NgModule({
   declarations: [
@@ -66,6 +67,7 @@ import { UserChatComponent } from './layout/user/user-chat/user-chat.component';
     UserpageComponent,
     AddmedicineComponent,
     ViewmedicineComponent,
+    ViewDonatedComponent,
     DropdownDirective,
     RequestmedicineComponent,
     MedicineRequestsComponent,

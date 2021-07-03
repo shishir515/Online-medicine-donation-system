@@ -29,6 +29,13 @@ export class MedicineService {
       )
       .get();
   }
+  getApproveMedicineByUser(userId) {
+    return this.firsestore
+      .collection("approvedmedicine", (ref) =>
+        ref.where("userId", "==", userId)
+      )
+      .snapshotChanges();
+  }
 
   getApproveMedicine() {
     return this.firsestore.collection("approvedmedicine").snapshotChanges();

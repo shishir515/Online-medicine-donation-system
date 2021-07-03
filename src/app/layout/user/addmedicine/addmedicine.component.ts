@@ -7,6 +7,7 @@ import { MedicineService } from "./../../../shared/medicine.service";
 import { Component, OnInit } from "@angular/core";
 import { NgForm } from "@angular/forms";
 import { ToastrService } from "ngx-toastr";
+import { AngularFireAuth } from "@angular/fire/auth";
 
 @Component({
   selector: "app-addmedicine",
@@ -16,14 +17,21 @@ import { ToastrService } from "ngx-toastr";
 export class AddmedicineComponent implements OnInit {
   ngoList = [];
   DonationType = ["NGO", "Individual", "Pharmacy"];
+  userId: string;
   constructor(
     public service: MedicineService,
     private firestore: AngularFirestore,
-    private toastr: ToastrService
+    private toastr: ToastrService,
+    private afAuth: AngularFireAuth
   ) {}
 
   ngOnInit() {
     this.resetForm();
+    this.afAuth.authState.subscribe((res) => {
+      if (!this.userId) {
+        this.userId = res.uid;
+      }
+    });
   }
 
   resetForm(form?: NgForm) {
@@ -40,7 +48,7 @@ export class AddmedicineComponent implements OnInit {
   }
   onSubmit(form: NgForm) {
     let data = form.value;
-    this.firestore.collection("medicine").add(data);
+    this.firestore.collection("medicine").add({ ...data, userId: this.userId });
     this.resetForm(form);
     this.toastr.success("Submit Sucessfully", "Medicine Added Sucessfully");
   }
