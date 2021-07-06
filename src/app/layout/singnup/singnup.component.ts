@@ -18,6 +18,7 @@ export class SingnupComponent implements OnInit {
   email: string;
   address: string;
   password: string;
+  phoneNumber: string;
 
   constructor(
     private authService: AuthService,

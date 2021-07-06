@@ -125,6 +125,31 @@
             >
             <!-- <span class="text-danger" [class.d-none]="password.valid || password.untouched">Password must be 6 digits</span> -->
           </div>
+          <div class="form-group">
+            <label for="Password" class="frm-control">Phone Number</label>
+            <input
+              type="number"
+              class="form-control"
+              id="phoneNumber"
+              placeholder="Phone Number"
+              pattern=""
+              name="phoneNumber"
+              [(ngModel)]="phoneNumber"
+              required
+              #phoneNumbervalid="ngModel"
+              [class.is-invalid]="
+                phoneNumbervalid.invalid && phoneNumbervalid.touched
+              "
+            />
+            <span
+              class="text-danger"
+              [class.d-none]="
+                phoneNumbervalid.valid || phoneNumbervalid.untouched
+              "
+              >Phone number is Required</span
+            >
+            <!-- <span class="text-danger" [class.d-none]="password.valid || password.untouched">Password must be 6 digits</span> -->
+          </div>
 
           <button
             type="submit"
